@@ -2,6 +2,11 @@
 dragon*_env/
 venv/
 env/
+.venv/
+
+# Generated Dragon files (these will be created by users)
+dragon*_gradio.py
+!dragon_template.py
 
 # Log files
 *.log
@@ -10,6 +15,8 @@ dragon*_logs.jsonl
 
 # Temporary processing files
 temp_*/
+uploads/
+cache/
 
 # Python cache
 __pycache__/
@@ -29,6 +36,10 @@ parts/
 sdist/
 var/
 wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # IDE files
 .vscode/
@@ -36,6 +47,8 @@ wheels/
 *.swp
 *.swo
 *.sublime-*
+.spyderproject
+.spyproject
 
 # OS files
 .DS_Store
@@ -56,3 +69,27 @@ Thumbs.db
 # Configuration files (may contain API keys)
 .env
 *.env
+config.json
+secrets.json
+
+# Test files
+test_*.py
+*_test.py
+tests/
+
+# Documentation builds
+docs/_build/
+.tox/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
